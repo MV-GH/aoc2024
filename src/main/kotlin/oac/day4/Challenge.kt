@@ -1,5 +1,6 @@
 package oac.day4
 
+import oac.util.Point
 import oac.util.getResourceAsText
 
 val txtInput = getResourceAsText("/day4/input.txt")!!
@@ -8,7 +9,6 @@ val inputList = txtInput.split("\n")
     .map(String::trim)
     .filter { it.isNotEmpty() }
 
-data class Point(val x: Int, val y: Int)
 
 val directionsNine = listOf(Point(0, 1), Point(1, 0), Point(0, -1), Point(-1, 0), Point(1, 1), Point(-1, -1), Point(1, -1), Point(-1, 1))
 
