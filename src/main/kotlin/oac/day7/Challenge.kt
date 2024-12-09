@@ -25,7 +25,7 @@ fun generateCombinations(number: Int, operations: List<Char>): Sequence<List<Cha
     }
 }
 
-fun isValidSequence(sequence: Pair<Long, List<Long>>, operators: List<Char>) : Boolean {
+fun isValidSequence(sequence: Pair<Long, List<Long>>, operators: List<Char>): Boolean {
     val total = sequence.first
     val numbers = sequence.second
     val operations = numbers.size - 1
