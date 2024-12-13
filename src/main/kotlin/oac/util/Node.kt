@@ -8,4 +8,8 @@ data class Node<T>(
     fun addChild(node: Node<T>) {
         _children.add(node)
     }
+
+    override fun toString(): String {
+        return "Node(data=$data, children=${children.size})"
+    }
 }

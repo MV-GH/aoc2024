@@ -10,8 +10,6 @@ data class Point(val x: Int, val y: Int) {
     }
 
     companion object {
-        val zero = Point(0, 0)
-
         val directionsEight = listOf(
             Point(0, 1), Point(1, 0), Point(0, -1), Point(-1, 0),
             Point(1, 1), Point(-1, -1), Point(1, -1), Point(-1, 1)
@@ -20,5 +18,15 @@ data class Point(val x: Int, val y: Int) {
         val directionsFour = listOf(
             Point(0, 1), Point(1, 0), Point(0, -1), Point(-1, 0)
         )
+
+        val ZERO = Point(0, 0)
+        val UP = Point(0, -1)
+        val DOWN = Point(0, 1)
+        val LEFT = Point(-1, 0)
+        val RIGHT = Point(1, 0)
+        val UP_LEFT = UP + LEFT
+        val UP_RIGHT = UP + RIGHT
+        val DOWN_LEFT = DOWN + LEFT
+        val DOWN_RIGHT = DOWN + RIGHT
     }
 }
