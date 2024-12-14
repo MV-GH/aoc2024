@@ -30,3 +30,15 @@ data class Point(val x: Int, val y: Int) {
         val DOWN_RIGHT = DOWN + RIGHT
     }
 }
+
+typealias Vector = Point
+
+data class VectorL(val x: Long, val y: Long) {
+    operator fun plus(other: VectorL): VectorL {
+        return VectorL(x + other.x, y + other.y)
+    }
+
+    operator fun minus(other: VectorL): VectorL {
+        return VectorL(x - other.x, y - other.y)
+    }
+}
